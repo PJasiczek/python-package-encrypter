@@ -1,8 +1,8 @@
 import math
 import numpy
 
-def encryptText(self, encryptSquare, textToEncrypt):
 
+def encryptText(encryptSquare, textToEncrypt):
     row = math.ceil(math.sqrt(len(encryptSquare)))
 
     j = 0
@@ -36,13 +36,12 @@ def encryptText(self, encryptSquare, textToEncrypt):
 
         for z in range(row):
             for x in range(row):
-                if(squareEncrypter[z][x] == p):
+                if (squareEncrypter[z][x] == p):
                     pRowIndex = z
                     pColumnIndex = x
-                if(squareEncrypter[z][x] == q):
+                if (squareEncrypter[z][x] == q):
                     qRowIndex = z
                     qColumnIndex = x
-
 
         if ((pColumnIndex == qColumnIndex) and (p != q)):
             if ((qRowIndex + 1) >= row or (pRowIndex + 1) >= row):
