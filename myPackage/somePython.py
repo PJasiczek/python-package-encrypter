@@ -2,7 +2,7 @@ import math
 import numpy
 
 
-def encryptText(encryptSquare, textToEncrypt):
+def encryptText(textToEncrypt,encryptSquare):
     row = math.ceil(math.sqrt(len(encryptSquare)))
 
     j = 0
